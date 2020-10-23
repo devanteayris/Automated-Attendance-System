@@ -1,7 +1,9 @@
 {
-  "name": "Node.js Sample",
-  "description": "A barebones Node.js app using Express",
-  "repository": "https://github.com/heroku/node-js-getting-started",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["node", "express", "static"]
+  "name": "Automated Attendance System",
+  "description": "Attendance System that features Facial Recognition",
+  "repository": "https://github.com/devanteayris/Automated-Attendance-System",
+  "keywords": ["django", "react", "static"]
+  "scripts" : {
+    "postdeploy": "python manage.py migrate"
+  }
 }
