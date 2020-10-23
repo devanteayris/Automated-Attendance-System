@@ -165,14 +165,14 @@ class AttendanceMutation(graphene.Mutation) :
                     err = [AlertFormat(title="Cannot detect face!", message="We could not detect your face, please try again")]
                     return AttendanceMutation(success=False, errors=err)         
 
-                if compare_encoding.size == 0 :
+                #if compare_encoding.size == 0 :
                     #if os.path.exists(person_real_disk_path) :
                     #    os.remove(person_real_disk_path)
 
                     #if os.path.exists(real_disk_path_compare) :
                     #    os.remove(real_disk_path_compare)
-                    err = [AlertFormat(title="Cannot detect face!", message="We could not detect your face, please try again")]
-                    return AttendanceMutation(success=False, errors=err)
+                #    err = [AlertFormat(title="Cannot detect face!", message="We could not detect your face, please try again")]
+                #    return AttendanceMutation(success=False, errors=err)
                 
                 results = face_recognition.compare_faces([person_encoding], compare_encoding)
 
