@@ -3,18 +3,14 @@
   "description": "Attendance System that features Facial Recognition",
   "repository": "https://github.com/devanteayris/Automated-Attendance-System",
   "keywords": ["django", "react", "static"],
-  "scripts" : {
-    "postdeploy": "python manage.py migrate"
-  },
   "env": {
     "RAILS_ENV": "production",
-    "AWS_ACCESS_KEY_ID": {
-            "description": "This gets generated",
-            "generator": "secret"
-    },
     "SETUP_BY": {
             "description": "Who initiated this setup",
             "value": ""
     }
+  },
+  "scripts" : {
+    "postdeploy": "python manage.py migrate"
   },
 }
