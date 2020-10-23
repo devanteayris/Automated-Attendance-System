@@ -7,9 +7,14 @@
     "postdeploy": "python manage.py migrate"
   },
   "env": {
+    "RAILS_ENV": "production",
     "AWS_ACCESS_KEY_ID": {
-      "description": "AWS Access Key for S3 Bucket",
-      "generator": "secret"
+            "description": "This gets generated",
+            "generator": "secret"
     },
+    "SETUP_BY": {
+            "description": "Who initiated this setup",
+            "value": ""
+    }
   },
 }
