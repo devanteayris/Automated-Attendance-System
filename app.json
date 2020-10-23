@@ -9,6 +9,7 @@
   "env": {
     "AWS_ACCESS_KEY_ID": {
       "description": "AWS Access Key for S3 Bucket",
+      "generator": "secret"
     },
   },
 }
