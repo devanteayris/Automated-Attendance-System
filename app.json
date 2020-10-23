@@ -5,10 +5,6 @@
   "keywords": ["django", "react", "static"],
   "env": {
     "RAILS_ENV": "production",
-    "SETUP_BY": {
-            "description": "Who initiated this setup",
-            "value": ""
-    }
   },
   "scripts" : {
     "postdeploy": "python manage.py migrate"
