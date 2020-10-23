@@ -6,23 +6,23 @@
 	"env": {
 		"AWS_ACCESS_KEY_ID": {
 			"description": "AWS Access Key for S3 Bucket",
-			"generator": "secret"
+			"value": ""
 		},
 		"AWS_SECRET_ACCESS_KEY": {
 			"description": "AWS Secret Access Key for S3 Bucket",
-			"generator": "secret"
+			"value": ""
 		},
 		"AWS_STORAGE_BUCKET_NAME": {
 			"description": "AWS S3 Bucket Name",
-			"generator": "secret"
+			"value": ""
 		},
 		"SECRET_KEY": {
 			"description": "Django Secret Key",
-			"generator": "secret"
+			"value": ""
 		},
 		"DB_PASSWORD": {
 			"description": "PostgreSQL Password",
-			"generator": "secret"
+			"value": ""
 		}
 	},
 	"scripts": {
