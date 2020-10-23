@@ -2,7 +2,7 @@
   "name": "Automated Attendance System",
   "description": "Attendance System that features Facial Recognition",
   "repository": "https://github.com/devanteayris/Automated-Attendance-System",
-  "keywords": ["django", "react", "static"]
+  "keywords": ["django", "react", "static"],
   "scripts" : {
     "postdeploy": "python manage.py migrate"
   }
