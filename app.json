@@ -4,7 +4,26 @@
   "repository": "https://github.com/devanteayris/Automated-Attendance-System",
   "keywords": ["django", "react", "static"],
   "env": {
-    "RAILS_ENV": "production",
+    "AWS_ACCESS_KEY_ID": {
+      "description": "AWS Access Key for S3 Bucket",
+      "generator": "secret"
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "AWS Secret Access Key for S3 Bucket",
+      "generator": "secret"
+    },
+    "AWS_STORAGE_BUCKET_NAME": {
+      "description": "AWS S3 Bucket Name",
+      "generator": "secret"
+    },
+    "SECRET_KEY": {
+      "description": "Django Secret Key",
+      "generator": "secret"
+    },
+    "DB_PASSWORD": {
+      "description": "PostgreSQL Password",
+      "generator": "secret"
+    }
   },
   "scripts" : {
     "postdeploy": "python manage.py migrate"
